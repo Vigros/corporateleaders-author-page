@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover CorporateLeaders by Biplab Bothra. Learn about the book, its author, and connect.">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>CorporateLeaders | Biplab Bothra</title>
+  <style>
+    :root {
+      --ink: #17211f;
+      --muted: #5e6b67;
+      --paper: #f7f7f4;
+      --card: #ffffff;
+      --line: #dfe5e1;
+      --accent: #246b57;
+      --accent-dark: #174b3d;
+      --soft: #e9f1ed;
+      --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-underline-offset: 4px; }
+    a:hover { color: var(--accent-dark); }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    header { border-bottom: 1px solid var(--line); background: rgba(247,247,244,.92); }
+    nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { font-weight: 800; letter-spacing: -.04em; font-size: 1.18rem; text-decoration: none; color: var(--ink); }
+    .brand span { color: var(--accent); }
+    .navlinks { display: flex; gap: 22px; flex-wrap: wrap; }
+    .navlinks a { font-size: .92rem; color: var(--muted); text-decoration: none; }
+    .navlinks a:hover { color: var(--accent); }
+    .hero { padding: 88px 0 78px; }
+    .eyebrow { color: var(--accent); font-size: .78rem; text-transform: uppercase; letter-spacing: .16em; font-weight: 800; }
+    h1 { font-size: clamp(3.1rem, 8vw, 6.6rem); line-height: .98; letter-spacing: -.075em; margin: 18px 0 22px; max-width: 850px; }
+    .hero p { max-width: 650px; font-size: 1.18rem; color: var(--muted); margin: 0; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; padding: 12px 20px; font-weight: 700; text-decoration: none; border: 1px solid var(--accent); }
+    .btn.primary { background: var(--accent); color: white; }
+    .btn.primary:hover { background: var(--accent-dark); }
+    .btn.secondary { color: var(--accent); background: transparent; }
+    .hero-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 48px; align-items: center; }
+    .book-card { background: var(--ink); color: white; border-radius: 8px; min-height: 330px; padding: 34px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 24px 60px rgba(23,33,31,.12); }
+    .book-card .small { font-size: .76rem; letter-spacing: .16em; text-transform: uppercase; color: #b9cec5; }
+    .book-card strong { display: block; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.03; letter-spacing: -.06em; margin: 22px 0; }
+    .book-card .author { color: #d8e3de; border-top: 1px solid rgba(255,255,255,.24); padding-top: 18px; }
+    section { padding: 70px 0; border-top: 1px solid var(--line); }
+    .section-head { display: grid; grid-template-columns: .7fr 1.3fr; gap: 36px; margin-bottom: 30px; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); letter-spacing: -.055em; line-height: 1.1; margin: 0; }
+    .section-intro { color: var(--muted); max-width: 670px; margin: 0; }
+    .content-card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 28px; }
+    .content-card p:first-child { margin-top: 0; }
+    .content-card p:last-child { margin-bottom: 0; }
+    .note { background: var(--soft); border-left: 3px solid var(--accent); padding: 16px 18px; color: #31463e; border-radius: 0 6px 6px 0; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .contact-item { padding: 22px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+    .contact-item h3 { margin: 0 0 6px; font-size: 1rem; }
+    .contact-item p { margin: 0; color: var(--muted); }
+    footer { padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 22px; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 28px, var(--max)); }
+      nav { align-items: flex-start; flex-direction: column; padding: 18px 0; gap: 10px; }
+      .navlinks { gap: 14px; }
+      .hero { padding: 58px 0; }
+      .hero-grid, .section-head, .contact-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 34px; }
+      section { padding: 52px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">Corporate<span>Leaders</span></a>
+      <div class="navlinks">
+        <a href="#book">The Book</a>
+        <a href="#author">Author</a>
+        <a href="#message">A Note to Readers</a>
+        <a href="#contact">Connect</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">A book by Biplab Bothra</div>
+          <h1>Corporate<br>Leaders.</h1>
+          <p>A dedicated space to discover the book, learn about its author, and continue the conversation beyond the page.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#book">Explore the book</a>
+            <a class="btn secondary" href="#author">Meet the author</a>
+          </div>
+        </div>
+        <aside class="book-card" aria-label="Book title card">
+          <div class="small">The book</div>
+          <strong>Corporate<br>Leaders</strong>
+          <div class="author">Written by Biplab Bothra</div>
+        </aside>
+      </div>
+    </div>
+
+    <section id="book">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">01 / The book</div><h2>About CorporateLeaders</h2></div>
+          <p class="section-intro">A short introduction to the ideas, purpose, and themes behind this book.</p>
+        </div>
+        <div class="content-card">
+          <p><strong>CorporateLeaders</strong> is a book by Biplab Bothra. This page is the place to add the official book description, its key themes, and what readers can expect to learn or reflect on.</p>
+          <p><strong>Suggested description:</strong> “Explore the people, decisions, and principles that shape leadership in the corporate world.”</p>
+          <div class="note">Before publishing, replace this starter description with the exact synopsis of your book so it accurately represents your work.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="author">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">02 / The author</div><h2>About Biplab Bothra</h2></div>
+          <p class="section-intro">Introduce yourself to readers and share the experience or motivation that brought this book to life.</p>
+        </div>
+        <div class="content-card">
+          <p>Biplab Bothra is the author of <em>CorporateLeaders</em>. His author profile can include a short biography, professional or academic background, interests, and the reason he chose to write this book.</p>
+          <p><strong>Make it yours:</strong> Add 100–150 words about your background, your interest in corporate leadership, and what you hope readers take away from the book.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">03 / A personal note</div><h2>A message to readers</h2></div>
+          <p class="section-intro">A small thank-you that makes the QR code feel like an invitation, not just a link.</p>
+        </div>
+        <div class="content-card">
+          <p>Thank you for reading <em>CorporateLeaders</em> and for giving your time to the ideas shared in these pages.</p>
+          <p>I hope this book offers you useful perspectives and encourages you to keep asking questions, learning, and growing. I would be glad to hear your thoughts and reflections.</p>
+          <p>— <strong>Biplab Bothra</strong></p>
+          <div class="note">You can personalize this message with your own voice, a dedication, or a note about why the book matters to you.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">04 / Stay connected</div><h2>Connect with the author</h2></div>
+          <p class="section-intro">Add the public contact and social links you want readers to use. Avoid publishing private contact details.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p>Replace with your author email address.</p>
+            <!-- Example: <p><a href="mailto:author@example.com">author@example.com</a></p> -->
+          </div>
+          <div class="contact-item">
+            <h3>LinkedIn</h3>
+            <p>Replace with your public LinkedIn profile URL.</p>
+          </div>
+          <div class="contact-item">
+            <h3>Instagram / Other social</h3>
+            <p>Add the social profile(s) you want readers to follow.</p>
+          </div>
+          <div class="contact-item">
+            <h3>Reader feedback</h3>
+            <p>Add a public feedback form or a link where readers can share their thoughts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Biplab Bothra</span>
+      <span>CorporateLeaders · Author page</span>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
